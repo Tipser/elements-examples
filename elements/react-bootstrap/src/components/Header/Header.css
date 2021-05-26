@@ -1,0 +1,98 @@
+.header {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    top: 0;
+    justify-content: center;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    padding: 0 40px 0 20px;
+    position: relative;
+    min-height: 70px;
+}
+
+.horizontal-menu {
+    list-style: none;
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0 10px;
+    padding: 0;
+    font-size: 0.7em;
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.horizontal-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-menu .horizontal-item {
+    display: inline-block;
+    padding: 0;
+    margin: 10px;
+    background-color: #fefefe;
+    font-weight: 500;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.horizontal-menu .horizontal-item a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    background-color: #f1f1f1;
+}
+
+.horizontal-menu .horizontal-item a:hover {
+    background-color: #dedede;
+}
+
+.navigation .cart-icon {
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navigation .cart-icon .tipser-icon-cart {
+    color: black;
+    font-size: 30px;
+}
+
+.te-logo {
+    height: 30px;
+    width: 30px;
+}
+
+.side-note {
+    display: flex;
+    font-family: Oswald, sans-serif;
+    justify-content: flex-end;
+    margin-right: 45px;
+    text-decoration: none;
+    color: #333;
+}
+
+.side-note:hover {
+    color: #5f5f5f;
+}
+
+@media (min-width: 990px) {
+    .horizontal-menu {
+        white-space: normal;
+    }
+}
