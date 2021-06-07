@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/footer.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navigation">
+        <a class="te-logo" href="https://www.tipser.com/">
+            <img src='/logo.svg' alt="Tipser" />
+        </a>
+        <ul class="horizontal-menu">
+            <li class="horizontal-item">
+                <a class="link" href="/">
+                    Product tile
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/product-listing">
+                    Product listing
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/product-page">
+                    Product page
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/collection">
+                    Collection
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/carousel">
+                    Carousel
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/store">
+                    Store
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/cart-page">
+                    Cart page
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="/checkout-page">
+                    Checkout page
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="https://tipser.dev/docs#tipser-script" target="_blank"
+                   rel="noopener noreferrer">
+                    Documentation
+                </a>
+            </li>
+            <li class="horizontal-item">
+                <a class="link" href="https://github.com/Tipser/elements-examples/tree/master/script" target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub repo
+                </a>
+            </li>
+        </ul>
+        <a class="side-note">
+            <div data-tipser-cart-icon></div>
+        </a>
+    </nav>
+
+</header>
+
+<h2 class="heading">Product listing</h2>
+<div data-tipser-product-listing data-tipser-product-id="603f804e3c0fd07f8abb8493"></div>
+
+<script>
+    var scriptTag = document.createElement('script');
+    scriptTag.src = "https://cdn.tipser.com/tipser-script/v3/tipser-script.min.js";
+
+    scriptTag.onload = scriptTag.onreadystatechange = function () {
+        tipserScript.initialize('59e86b79b8f3f60a94ecd26a', {
+            env: "stage",
+            customUrls: {
+                checkoutUrl: '/checkout',
+                checkoutConfirmationUrl: '/confirmation',
+            },
+        })
+    };
+    document.body.appendChild(scriptTag);
+</script>
+
+<footer>
+    <div class="footer-logo"><a href="/" class="tipser-logo">
+        <img src="https://www.tipser.com/523e894dc43c43f278bb4211a4430285.png" alt="">
+    </a>
+    </div>
+    <div class="footer-links "><a href="https://www.tipser.com/terms" target="_blank" class="footer-link">Conditions
+        of Use and Sale</a><a href="https://www.tipser.com/terms-privacy" target="_blank"
+                              class="footer-link">Privacy notice</a><a href="https://www.tipser.com/imprint" target="_blank"
+                                                                       class="footer-link">Imprint</a><a href="https://www.tipser.com/terms-cookies" target="_blank"
+                                                                                                         class="footer-link">Cookies &amp;
+        Analytics</a></div>
+    <div class="footer-copyrights">© 2011 - 2021, Tipser AB</div>
+</footer>
+
+</body>
+
+</html>
