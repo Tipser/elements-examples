@@ -41,7 +41,7 @@ export const Header = () => {
                     <li className="horizontal-item">
                         <a
                             className="link"
-                            href="https://github.com/Tipser/tipser-elements-react-bootstrap"
+                            href="https://github.com/Tipser/elements-examples"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

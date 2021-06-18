@@ -35,12 +35,15 @@ export const ProductTile = ({productId}) => {
     return (
         <div className={styles.item}>
             <div className={styles.imageContainer}>
-            <img src={product.images[0]['250x']} className={styles.image}/>
+                <img src={product.images[0]['250x']} className={styles.image}/>
             </div>
             <div className={styles.footer}>
-                <span className={styles.ellipsis}>{product.title}</span>
-                <span>{price.formatted}</span>
-                <button onClick={handleClick}>Buy</button>
+                <div className={styles.details}>
+                    <p className={styles.brand}>{product.brand.toLowerCase()}</p>
+                    <p className={styles.title}>{product.title.toLowerCase()}</p>
+                    <p className={styles.price}>{price.formatted}</p>
+                </div>
+                <button className={styles.button} onClick={handleClick}>Buy</button>
             </div>
         </div>
     );
