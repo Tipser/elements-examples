@@ -31,7 +31,7 @@ export const Header = () => {
                     <li className="horizontal-item">
                         <a
                             className="link"
-                            href="https://tipser.dev/docs/v3/elements"
+                            href="https://tipser.readme.io/docs"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
