@@ -35,7 +35,7 @@ export const ProductTile = ({productId}) => {
     return (
         <div className={styles.item}>
             <div className={styles.imageContainer}>
-                <img alt="product-image" src={product.images[0]['250x']} className={styles.image}/>
+                <img alt={product.title} src={product.images[0]['250x']} className={styles.image}/>
             </div>
             <div className={styles.footer}>
                 <div className={styles.details}>
