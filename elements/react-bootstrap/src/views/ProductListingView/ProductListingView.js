@@ -5,7 +5,7 @@ import { Header } from '../../components/Header';
 import { Content } from '../../components/Content';
 import { Footer } from '../../components/Footer';
 
-const PRODUCT_ID = '5ea772ad536e9f0001357ecb';
+const PRODUCT_ID = '6058d994497db9d288980d45';
 
 export const ProductListingView = () => {
     return (

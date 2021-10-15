@@ -5,7 +5,7 @@ import { Header } from '../../components/Header';
 import { Content } from '../../components/Content';
 import { Footer } from '../../components/Footer';
 
-const COLLECTION_ID = '5f675d6a05c9dc00013bfb48';
+const COLLECTION_ID = '5e7881786bcc5f00010dc658';
 
 export const CollectionView = () => {
     return (
